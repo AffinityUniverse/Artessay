@@ -14,19 +14,6 @@ body {
 }
 
 @font-face {
-    font-family: 'SBAggroB';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Sagak-sagak';
-    src: url('Sagak-sagak.woff') format('woff2');
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'NelnaLizzyChae';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/NelnaLizzyChae.woff2') format('woff2');
     font-weight: normal;
@@ -144,63 +131,63 @@ section {
 }
 
 .num1 {
-    background-image: url(https://raw.githubusercontent.com/AffinityUniverse/number/main/number1.png);
+    background-image: url(num/1.png);
 }
 
 .num2 {
-    background-image: url(https://raw.githubusercontent.com/AffinityUniverse/number/main/number2.png);
+    background-image: url(num/2.png);
 }
 
 .num3 {
-    background-image: url(https://raw.githubusercontent.com/AffinityUniverse/number/main/number3.png);
+    background-image: url(num/3.png);
 }
 
 .num4 {
-    background-image: url(https://raw.githubusercontent.com/AffinityUniverse/number/main/number4.png);
+    background-image: url(num/4.png);
 }
 
 .num5 {
-    background-image: url(https://raw.githubusercontent.com/AffinityUniverse/number/main/number5.png);
+    background-image: url(num/5.png);
 }
 
 .num6 {
-    background-image: url(https://raw.githubusercontent.com/AffinityUniverse/number/main/number6.png);
+    background-image: url(num/6.png);
 }
 
 .num7 {
-    background-image: url(https://raw.githubusercontent.com/AffinityUniverse/number/main/number7.png);
+    background-image: url(num/7.png);
 }
 
 .num8 {
-    background-image: url(https://raw.githubusercontent.com/AffinityUniverse/number/main/number8.png);
+    background-image: url(num/8.png);
 }
 
 .num9 {
-    background-image: url(https://raw.githubusercontent.com/AffinityUniverse/number/main/number9.png);
+    background-image: url(num/9.png);
 }
 
 .num10 {
-    background-image: url(https://raw.githubusercontent.com/AffinityUniverse/number/main/number10.png);
+    background-image: url(num/10.png);
 }
 
 .num11 {
-    background-image: url(https://raw.githubusercontent.com/AffinityUniverse/number/main/number6.png);
+    background-image: url(num/11.png);
 }
 
 .num12 {
-    background-image: url(https://raw.githubusercontent.com/AffinityUniverse/number/main/number7.png);
+    background-image: url(num/12.png);
 }
 
 .num13 {
-    background-image: url(https://raw.githubusercontent.com/AffinityUniverse/number/main/number8.png);
+    background-image: url(num/13.png);
 }
 
 .num14 {
-    background-image: url(https://raw.githubusercontent.com/AffinityUniverse/number/main/number9.png);
+    background-image: url(num/14.png);
 }
 
 .num15 {
-    background-image: url(https://raw.githubusercontent.com/AffinityUniverse/number/main/number10.png);
+    background-image: url(num/15.png);
 }
 
 .top {
