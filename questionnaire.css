@@ -76,8 +76,23 @@ body {
     margin-bottom: 30px;
 }
 
+.alg {
+    width: 520px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.als {
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .al {
-    width: 230px;
+    width: 250px;
     height: 50px;
     background-color: white;
 
@@ -86,7 +101,6 @@ body {
     border-radius: 30px;
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: "Montserrat", sans-serif;
