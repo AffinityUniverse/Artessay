@@ -99,6 +99,9 @@ body {
     text-decoration: none;
 
     transition: transform 1.0s, border-radius 1.0s;
+
+    background-color: #0163FF;
+    color: white;
 }
 
 .al:hover {
@@ -106,9 +109,9 @@ body {
     font-weight: 600;
 
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgb(0, 0, 0, 0.3);
-    border-radius: 30px;
+    /*box-shadow: 0 8px 16px rgb(0, 0, 0, 0.3);*/
     background-color: #FFCF03;
+    color: black;
 }
 
 section {
