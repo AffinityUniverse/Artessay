@@ -1,0 +1,258 @@
+* {
+    background-position: center;
+    background-size: cover;
+    border-radius: 15%;
+}
+
+body {
+    margin: 30px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@font-face {
+    font-family: 'Ownglyph_meetme-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.myprofile {
+    width: 350px;
+    margin: 30px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myImage {
+    margin-top: 40px;
+    width: 90px;
+    height: 90px;
+    border-radius: 30%;
+
+    background-image: url('logo.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.myName {
+    color: #FFCF03;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.myAbout {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 17px;
+
+    width: 250px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.alg {
+    width: 520px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.als {
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.al {
+    width: 250px;
+    height: 50px;
+    background-color: white;
+
+    margin-bottom: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0px;
+
+    color: black;
+    text-decoration: none;
+
+    transition: transform 1.0s, border-radius 1.0s;
+
+    background-color: #0163FF;
+    color: white;
+}
+
+.al:hover {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+
+    transform: scale(1.05);
+    /*box-shadow: 0 8px 16px rgb(0, 0, 0, 0.3);*/
+    background-color: #FFCF03;
+    color: black;
+}
+
+section {
+    width: 500px;
+    height: 500px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    perspective: 1500px;
+}
+
+.group {
+    clear: left;
+    transition: transform 1.0s;
+}
+
+.group>section>div {
+    width: 500px;
+    height: 500px;
+    transition: 0.5s;
+}
+
+.num1 {
+    background-image: url(num/1.png);
+}
+
+.num2 {
+    background-image: url(num/2.png);
+}
+
+.num3 {
+    background-image: url(num/3.png);
+}
+
+.num4 {
+    background-image: url(num/4.png);
+}
+
+.num5 {
+    background-image: url(num/5.png);
+}
+
+.num6 {
+    background-image: url(num/6.png);
+}
+
+.num7 {
+    background-image: url(num/7.png);
+}
+
+.num8 {
+    background-image: url(num/8.png);
+}
+
+.num9 {
+    background-image: url(num/9.png);
+}
+
+.num10 {
+    background-image: url(num/10.png);
+}
+
+.num11 {
+    background-image: url(num/11.png);
+}
+
+.num12 {
+    background-image: url(num/12.png);
+}
+
+.num13 {
+    background-image: url(num/13.png);
+}
+
+.num14 {
+    background-image: url(num/14.png);
+}
+
+.num15 {
+    background-image: url(num/15.png);
+}
+
+.top {
+    transform-origin: top;
+}
+
+.bottom {
+    transform-origin: bottom;
+}
+
+.left {
+    transform-origin: left;
+}
+
+
+.group.open .flipX {
+    transform: rotateX(180deg);
+}
+
+.group.open .flipY {
+    transform: rotateY(180deg);
+}
+
+.group.open .flipZ {
+    transform: rotateZ(180deg);
+}
+
+.group.open {
+    transform: scale(1.5);
+}
+
+.navbar {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    width: 100px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 50px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar a {
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    transform: scale(1.2);
+}
+
+.title {
+    font-family: 'Ownglyph_meetme-Rg';
+    font-size: 80px;
+    color: white;
+    margin-top: 50px;
+}
