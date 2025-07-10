@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Essay 1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Affinity Universe Art Essay 1">
+    <meta property="og:description" content="어피니티 유니버스 디자인•마케팅•그림책출판 온라인 실시간 컨설팅">
+    <meta property="og:image" content="1/property.png">
+
+    <link rel="stylesheet" href="questionnaire.css">
+</head>
+
+<body style="background-color: #0846B0;">
+
+    <div class="navbar">
+        <a href="#section1" class="num1"></a>
+        <a href="#section2" class="num2"></a>
+        <a href="#section3" class="num3"></a>
+        <a href="#section4" class="num4"></a>
+        <a href="#section5" class="num5"></a>
+        <a href="#section6" class="num6"></a>
+    </div>
+
+    <div class="title">작가의 <span style="color: #FFCF03;">창작 과정</span> 이해</div>
+
+    <div class="group" id="section1">
+        <section style="background-image: url(1/question1.png);">
+            <div class="num1 top flipX"></div>
+        </section>
+    </div>
+
+    <div class="group" id="section2">
+        <section style="background-image: url(1/question2.png);">
+            <div class="num2 bottom flipX"></div>
+        </section>
+    </div>
+
+    <div class="group" id="section3">
+        <section style="background-image: url(1/question3.png);">
+            <div class="num3 left flipY"></div>
+        </section>
+    </div>
+
+    <div class="group" id="section4">
+        <section style="background-image: url(1/question4.png);">
+            <div class="num4 top flipZ"></div>
+        </section>
+    </div>
+
+    <div class="group" id="section5">
+        <section style="background-image: url(1/question5.png);">
+            <div class="num5 left flipZ"></div>
+        </section>
+    </div>
+
+    <div class="group" id="section6">
+        <section style="background-image: url(1/question6.png);">
+            <div class="num6 top flipX"></div>
+        </section>
+    </div>
+
+    <script>
+        // Smooth scrolling when clicking on the navbar links
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetSection = document.querySelector(this.getAttribute('href'));
+
+                // Scroll smoothly to the target section
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close any open card groups
+                document.querySelectorAll('.group.open').forEach(group => {
+                    group.classList.remove('open');
+                });
+            });
+        });
+
+        // Add click event listeners to flipX elements
+        document.querySelectorAll('.flipX').forEach(flipX => {
+            flipX.addEventListener('click', function () {
+                const group = this.closest('.group');
+                // Close other open card groups
+                document.querySelectorAll('.group.open').forEach(openGroup => {
+                    if (openGroup !== group) {
+                        openGroup.classList.remove('open');
+                    }
+                });
+                // Toggle the 'open' class on the clicked group element
+                group.classList.toggle('open');
+            });
+        });
+
+        document.querySelectorAll('.flipY').forEach(flipY => {
+            flipY.addEventListener('click', function () {
+                const group = this.closest('.group');
+                document.querySelectorAll('.group.open').forEach(openGroup => {
+                    if (openGroup !== group) {
+                        openGroup.classList.remove('open');
+                    }
+                });
+                group.classList.toggle('open');
+            });
+        });
+
+        document.querySelectorAll('.flipZ').forEach(flipZ => {
+            flipZ.addEventListener('click', function () {
+                const group = this.closest('.group');
+                document.querySelectorAll('.group.open').forEach(openGroup => {
+                    if (openGroup !== group) {
+                        openGroup.classList.remove('open');
+                    }
+                });
+                group.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+
+</html>
